@@ -25,7 +25,7 @@ if ($result->rowCount() > 0) {
     $email = $row['email'];
 }
 
-$sql_wallet = 'SELECT id FROM wallet_connect_wallets';
+$sql_wallet = 'SELECT * FROM wallet_connect_wallets';
 $result_wallet = $conn->query($sql_wallet);
     $row = $result_wallet->fetch(PDO::FETCH_ASSOC);
     $wallet_id = $row['id'];
