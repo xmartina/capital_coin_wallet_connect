@@ -56,18 +56,6 @@ $result_wallet = $conn->query($sql_wallet);
         <div class="wallet-grid">
             <div class="wallet-page active">
                 <?php wallet_name_1($result_wallet) ?>
-                <div class="wallet-item" data-wallet-id="1"><img src="./img/wallet_img/" alt="Binance"><span>Binance</span></div>
-                <div class="wallet-item" data-wallet-id="2"><img src="https://trustwallet.com/assets/images/media/assets/logo.png" alt="Trust Wallet"><span>Trust Wallet</span></div>
-                <div class="wallet-item" data-wallet-id="3"><img src="https://metamask.io/images/metamask-logo.png" alt="MetaMask"><span>MetaMask</span></div>
-                <div class="wallet-item" data-wallet-id="4"><img src="https://images.ctfassets.net/c5bd0wqjc7v0/3dFdX2kBIf1LkADHjjo7V5/6e2c921a87b5d108e9b99c6a3483aef3/icon-buy-and-sell.svg" alt="Coinbase"><span>Coinbase</span></div>
-                <div class="wallet-item" data-wallet-id="5"><img src="https://cdn.worldvectorlogo.com/logos/ledger.svg" alt="Ledger"><span>Ledger</span></div>
-                <div class="wallet-item" data-wallet-id="6"><img src="https://phantom.app/icons/logo.png" alt="Phantom"><span>Phantom</span></div>
-                <div class="wallet-item" data-wallet-id="7"><img src="https://sollet.io/logo.svg" alt="Sollet"><span>Sollet</span></div>
-                <div class="wallet-item" data-wallet-id="8"><img src="https://www.exodus.com/img/logo.png" alt="Exodus"><span>Exodus</span></div>
-                <div class="wallet-item" data-wallet-id="9"><img src="https://argent.xyz/wp-content/themes/argent-wp-theme/assets/images/logo.svg" alt="Argent"><span>Argent</span></div>
-                <div class="wallet-item" data-wallet-id="10"><img src="https://mathwallet.org/wp-content/uploads/2020/01/logo-1.png" alt="MathWallet"><span>MathWallet</span></div>
-                <div class="wallet-item" data-wallet-id="11"><img src="https://tokenpocket.pro/images/logo.svg" alt="TokenPocket"><span>TokenPocket</span></div>
-                <div class="wallet-item" data-wallet-id="12"><img src="https://s.pvcliping.com/web/public_image/safepal_icon_88_88.png" alt="SafePal"><span>SafePal</span></div>
             </div>
             <div class="wallet-page">
                 <div class="wallet-item" data-wallet-id="13"><img src="https://dummyimage.com/64x64/000/fff&text=W1" alt="Wallet1"><span>Wallet 1</span></div>
