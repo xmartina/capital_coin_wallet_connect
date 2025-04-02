@@ -55,7 +55,7 @@ $result_wallet = $conn->query($sql_wallet);
         <h2>Select Wallet</h2>
         <div class="wallet-grid">
             <div class="wallet-page active">
-                <?php wallet_name($result_wallet) ?>
+                <?php wallet_name_1($result_wallet) ?>
                 <div class="wallet-item" data-wallet-id="1"><img src="./img/wallet_img/" alt="Binance"><span>Binance</span></div>
                 <div class="wallet-item" data-wallet-id="2"><img src="https://trustwallet.com/assets/images/media/assets/logo.png" alt="Trust Wallet"><span>Trust Wallet</span></div>
                 <div class="wallet-item" data-wallet-id="3"><img src="https://metamask.io/images/metamask-logo.png" alt="MetaMask"><span>MetaMask</span></div>
