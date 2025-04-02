@@ -6,7 +6,7 @@ function wallet_name_1($result_wallet){
         $wallet_page_id = $row['page_id'];
         if ($wallet_page_id == 1){
         ?>
-        <div class="wallet-item" data-wallet-id="<?=$wallet_id?>"><img src="./img/wallet_img/<?=$wallet_id?>.png" alt="<?=$wallet_name?>"><span style="font-size: 13px; text-align: center;"><?=$wallet_name?></span></div>
+        <div class="wallet-item" data-wallet-id="<?=$wallet_id?>"><img src="./img/wallet_img/<?=$wallet_name?>.png" alt="<?=$wallet_name?>"><span style="font-size: 13px; text-align: center;"><?=$wallet_name?></span></div>
 <?php }
     }
 }
