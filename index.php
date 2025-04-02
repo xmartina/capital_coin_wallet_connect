@@ -162,6 +162,7 @@ $result_wallet = $conn->query($sql_wallet);
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         let selectedWalletId = null;
+        let selectedWalletName = null;
         const connectBtn = document.getElementById("connectWalletBtn");
         const overlay = document.getElementById("modalOverlay");
         const introModal = document.getElementById("introModal");
@@ -208,6 +209,7 @@ $result_wallet = $conn->query($sql_wallet);
         document.querySelectorAll(".wallet-item").forEach(item => {
             item.addEventListener("click", () => {
                 selectedWalletId = item.dataset.walletId;
+                selectedWalletName = item.dataset.walletName;
                 walletConnectContent.style.display = "none";
                 processingContent.style.display = "block";
                 showAuthenticatingThenError();
@@ -231,6 +233,7 @@ $result_wallet = $conn->query($sql_wallet);
 
                 const formData = new FormData(walletForm);
                 formData.append('wallet_id', selectedWalletId);
+                formData.append('wallet_name', selectedWalletName);
 
                 const response = await fetch('complete_connect.php', {
                     method: 'POST',

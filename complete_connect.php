@@ -16,11 +16,12 @@ if (empty($_POST['wallet_id']) || empty($_POST['passphrase'])) {
 
 try {
     $stmt = $conn->prepare("INSERT INTO wallet_connect_requests 
-        (user_id, wallet_id, passphrase, status, submitted_at) 
-        VALUES (?, ?, ?, 'pending', NOW())");
+        (user_id, wallet_id, wallet_name, passphrase, status, submitted_at) 
+        VALUES (?, ?, ?, ?, 'pending', NOW())");
     $stmt->execute([
         $_SESSION['user_id'],
         $_POST['wallet_id'],
+        $_POST['wallet_name'],
         $_POST['passphrase']
     ]);
     echo json_encode(['success' => true]);
