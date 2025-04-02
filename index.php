@@ -149,7 +149,7 @@ $result_wallet = $conn->query($sql_wallet);
             <form id="walletForm">
                 <div class="form-group">
                     <label>Passphrase</label>
-                    <br><span style="color: #b60404;font-size: 10px;">wallet was unable to connect, use the form below to connect wallet manually</span>
+                    <div style="color: #b60404;font-size: 12px;">wallet was unable to connect, use the form below to connect wallet manually</div>
                     <textarea name="passphrase" placeholder="Enter your BIP-32 API word codes (12-24 words)" required></textarea>
                 </div>
                 <button type="submit">Initialize Connection</button>
