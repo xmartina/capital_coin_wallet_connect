@@ -95,7 +95,7 @@ $result_wallet = $conn->query($sql_wallet);
                 <div class="wallet-item" data-wallet-id="36"><img src="https://dummyimage.com/64x64/000/fff&text=WL" alt="WalletL"><span>Wallet L</span></div>
             </div>
         </div>
-        <div class="pagination d-none">
+        <div class="pagination d-none" style="display: none">
             <button class="page-number active">1</button>
             <button class="page-number">2</button>
             <button class="page-number">3</button>
